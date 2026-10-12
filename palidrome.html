@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>CHECK IF THE STRING IS PALIDROME OR NOT</h2>
+    <SCRIPT>
+        function palindrome(mystring){
+            var input=mystring.replace(/^A-Z0-9/ig,"").toLowerCase();
+            var reverse=input.split('').reverse().join('');
+            if (input==reverse){
+                document.write("<div>"+mystring+" is palindrome</div>")
+
+                    
+            }
+            else{
+                document.write("<div>"+mystring + " is not palindrome</div>")
+            }
+        
+            
+        }
+        palindrome("prince");
+        palindrome("dammit");
+        palindrome("racecar");
+    </SCRIPT>
+</body>
+</html>
